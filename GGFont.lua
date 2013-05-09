@@ -75,7 +75,11 @@ function GGFont:get( name, platform )
 		platform = "ios"
 	end
 	
-	return self.fonts[ name ][ platform ]
+	if self.fonts[ name ] then
+		return self.fonts[ name ][ platform ]
+	else
+		return name
+	end
 	
 end
 
