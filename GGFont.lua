@@ -142,7 +142,7 @@ function GGFont:displayFonts( fonts )
 	for i, fontName in ipairs( fonts ) do
 		local fontName = display.newText( fontName, 10, ( i - 1 ) * 26, fontName, 14 )
 		fontGroup:insert( fontName )
-		fontName:setTextColor( 255, 255, 255 )
+		fontName:setFillColor( 1, 1, 1 )
 	end
 	
 	fontList:insert( fontGroup )
